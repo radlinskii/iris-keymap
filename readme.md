@@ -65,7 +65,7 @@ For usage information go to [QMK docs](https://docs.qmk.fm/#/newbs).
         keymap
     </summary>
 
-<img width="800" alt="numeric and symbols layer keymap" src="https://user-images.githubusercontent.com/26116041/173403164-b0520501-761b-4567-bf04-57f7b6f7dd4d.png">
+<img width="800" alt="numeric and symbols layer keymap" src="https://user-images.githubusercontent.com/26116041/177011426-a3fcc280-02ca-48c4-80a1-30d793bf13d5.png">
 
 </details>
 <details>
