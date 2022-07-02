@@ -2,11 +2,17 @@
 
 ![iris rev. 6 by radlinskii lightning demo](https://user-images.githubusercontent.com/26116041/171883033-3c5ababe-88ae-4c9d-8436-3d6ab83dbf4b.gif)
 
+Keymap configuration files used to flash [Keebio's](https://keeb.io) Iris rev. 6 keyboard using [QMK](https://qmk.fm).
+
+A version of the files necessary for flashing can also be found in the official qmk firmware repository [github.com/qmk/qmk_firmware/keyboards/keebio/iris/keymaps/radlinskii](https://github.com/qmk/qmk_firmware/tree/master/keyboards/keebio/iris/keymaps/radlinskii).
+
+For usage information go to [QMK docs](https://docs.qmk.fm/#/newbs).
+
 ## Features:
 
 -   [RGB Lightning layers](https://docs.qmk.fm/#/feature_rgblight?id=lighting-layers)
--   [MOUSE KEYS](https://docs.qmk.fm/#/keycodes?id=mouse-keys)
 -   [MOD-TAPS](https://docs.qmk.fm/#/mod_tap)
+-   [MOUSE KEYS](https://docs.qmk.fm/#/keycodes?id=mouse-keys)
 
 ## Layers:
 
@@ -26,7 +32,6 @@
     <summary>
         lightning
     </summary>
-
 
 <img width="800" alt="colemak layer lightning" src="https://user-images.githubusercontent.com/26116041/173681398-cdcff1a5-ae79-4409-950a-1b671c350f07.jpeg">
 
@@ -134,4 +139,3 @@
 <img width="800" alt="media and miscellaneous layer lightning" src="https://user-images.githubusercontent.com/26116041/173682188-3eab9c09-d466-4729-89ac-48e09f55564c.jpeg">
 
 </details>
-
