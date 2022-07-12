@@ -139,3 +139,11 @@ For usage information go to [QMK docs](https://docs.qmk.fm/#/newbs).
 <img width="800" alt="media and miscellaneous layer lighting" src="https://user-images.githubusercontent.com/26116041/173682188-3eab9c09-d466-4729-89ac-48e09f55564c.jpeg">
 
 </details>
+
+## Usage
+
+Use [qmk-firmware](https://qmk.fm) to compile the keymap, example:
+
+```bash
+qmk compile -kb keebio/iris/rev6 -km radlinskii && cp ~/qmk_firmware/.build/keebio_iris_rev6_radlinskii.hex ~/Desktop/keebio_iris_rev6_radlinskii.hex
+```
