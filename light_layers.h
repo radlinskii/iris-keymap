@@ -69,7 +69,30 @@ const rgblight_segment_t PROGMEM QWERTY_LIGHT_LAYER[] = RGBLIGHT_LAYER_SEGMENTS(
     {65, 3, 85, 0, 255} // underglow
 );
 
-const rgblight_segment_t PROGMEM NUM_SYM_LIGHT_LAYER[] = RGBLIGHT_LAYER_SEGMENTS(
+const rgblight_segment_t PROGMEM SYM_LIGHT_LAYER[] = RGBLIGHT_LAYER_SEGMENTS(
+    // left side
+    {0, 6, 201, 255, 255},
+    {6, 6, 191, 255, 255},
+    {12, 6, 181, 255, 255},
+    {18, 6, 171, 255, 255},
+    {24, 1, 169, 255, 255},
+    {25, 1, 85, 255, 255}, // TO(DEFAULT)
+    {26, 2, 169, 255, 255},
+    {28, 3, 169, 255, 255}, // underglow
+    {31, 3, 201, 255, 255}, // underglow
+    // right side
+    {34, 6, 201, 255, 255},
+    {40, 6, 191, 255, 255},
+    {46, 6, 181, 255, 255},
+    {52, 6, 171, 255, 255},
+    {58, 1, 169, 255, 255},
+    {59, 1, 201, 255, 255}, // TO(_NAV)
+    {60, 2, 169, 255, 255},
+    {62, 3, 169, 255, 255}, // underglow
+    {65, 3, 201, 255, 255} // underglow
+);
+
+const rgblight_segment_t PROGMEM NUM_LIGHT_LAYER[] = RGBLIGHT_LAYER_SEGMENTS(
     // left side
     {0, 6, 201, 255, 255},
     {6, 6, 191, 255, 255},
@@ -139,7 +162,7 @@ const rgblight_segment_t PROGMEM MOUSE_LIGHT_LAYER[] = RGBLIGHT_LAYER_SEGMENTS(
     {65, 3, 4, 255, 255} // underglow
 );
 
-const rgblight_segment_t PROGMEM MEDIA_MISC_LIGHT_LAYER[] = RGBLIGHT_LAYER_SEGMENTS(
+const rgblight_segment_t PROGMEM MEDIA_FN_LIGHT_LAYER[] = RGBLIGHT_LAYER_SEGMENTS(
     // both sides
     {0, 1, 0, 255, 255}, // RESET
     {1, 4, 0, 0, 0},
@@ -172,8 +195,9 @@ const rgblight_segment_t PROGMEM MEDIA_MISC_LIGHT_LAYER[] = RGBLIGHT_LAYER_SEGME
 const rgblight_segment_t* const PROGMEM MY_LIGHT_LAYERS[] = RGBLIGHT_LAYERS_LIST(
     COLEMAK_LIGHT_LAYER,
     QWERTY_LIGHT_LAYER,
-    NUM_SYM_LIGHT_LAYER,
+    SYM_LIGHT_LAYER,
+    NUM_LIGHT_LAYER,
     NAV_LIGHT_LAYER,
     MOUSE_LIGHT_LAYER,
-    MEDIA_MISC_LIGHT_LAYER
+    MEDIA_FN_LIGHT_LAYER
 );
