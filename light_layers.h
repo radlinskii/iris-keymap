@@ -30,8 +30,8 @@ const rgblight_segment_t PROGMEM COLEMAK_LIGHT_LAYER[] = RGBLIGHT_LAYER_SEGMENTS
     {12, 6, 97, 255, 255},
     {18, 6, 90, 255, 255},
     {24, 1, 85, 255, 255},
-    {25, 1, 201, 255, 255}, // _NAV
-    {26, 1, 20, 255, 255}, // _MOUSE
+    {25, 1, 20, 255, 255}, // _NAV
+    {26, 1, 0, 255, 255}, // _MOUSE
     {27, 1, 85, 255, 255},
     {28, 3, 85, 255, 255}, // underglow
     {31, 3, 127, 255, 255}, // underglow
@@ -40,7 +40,7 @@ const rgblight_segment_t PROGMEM COLEMAK_LIGHT_LAYER[] = RGBLIGHT_LAYER_SEGMENTS
     {40, 6, 115, 255, 255},
     {46, 6, 97, 255, 255},
     {52, 6, 90, 255, 255},
-    {58, 1, 0, 255, 255}, // _MEDIA_FN
+    {58, 1, 201, 255, 255}, // _MEDIA_FN
     {59, 1, 169, 255, 255}, // _SYM
     {60, 1, 140, 255, 255}, // _NUM
     {61, 1, 85, 255, 255},
@@ -55,8 +55,8 @@ const rgblight_segment_t PROGMEM QWERTY_LIGHT_LAYER[] = RGBLIGHT_LAYER_SEGMENTS(
     {12, 6, 85, 150, 255},
     {18, 6, 85, 240, 255},
     {24, 1, 85, 255, 255},
-    {25, 1, 201, 255, 255}, // _NAV
-    {26, 1, 20, 255, 255}, // _MOUSE
+    {25, 1, 20, 255, 255}, // _NAV
+    {26, 1, 0, 255, 255}, // _MOUSE
     {27, 1, 85, 255, 255},
     {28, 3, 85, 255, 255}, // underglow
     {31, 3, 85, 0, 255}, // underglow
@@ -65,7 +65,7 @@ const rgblight_segment_t PROGMEM QWERTY_LIGHT_LAYER[] = RGBLIGHT_LAYER_SEGMENTS(
     {40, 6, 85, 70, 255},
     {46, 6, 85, 150, 255},
     {52, 6, 85, 240, 255},
-    {58, 1, 0, 255, 255}, // _MEDIA_FN
+    {58, 1, 201, 255, 255}, // _MEDIA_FN
     {59, 1, 169, 255, 255}, // _SYM
     {60, 1, 140, 255, 255}, // _NUM
     {61, 1, 85, 255, 255},
@@ -74,6 +74,7 @@ const rgblight_segment_t PROGMEM QWERTY_LIGHT_LAYER[] = RGBLIGHT_LAYER_SEGMENTS(
 );
 
 const rgblight_segment_t PROGMEM SYM_LIGHT_LAYER[] = RGBLIGHT_LAYER_SEGMENTS(
+    // Dark Blue
     // left side
     {0, 6, 201, 255, 255},
     {6, 6, 191, 255, 255},
@@ -95,6 +96,7 @@ const rgblight_segment_t PROGMEM SYM_LIGHT_LAYER[] = RGBLIGHT_LAYER_SEGMENTS(
 );
 
 const rgblight_segment_t PROGMEM NUM_LIGHT_LAYER[] = RGBLIGHT_LAYER_SEGMENTS(
+    // Light Blue
     // left side
     {0, 6, 180, 255, 255},
     {6, 6, 170, 255, 255},
@@ -116,36 +118,16 @@ const rgblight_segment_t PROGMEM NUM_LIGHT_LAYER[] = RGBLIGHT_LAYER_SEGMENTS(
 );
 
 const rgblight_segment_t PROGMEM NAV_LIGHT_LAYER[] = RGBLIGHT_LAYER_SEGMENTS(
-    // left side
-    {0, 6, 248, 255, 255},
-    {6, 6, 240, 255, 255},
-    {12, 6, 225, 255, 255},
-    {18, 6, 210, 255, 255},
-    {24, 1, 201, 255, 255},
-    {25, 1, 85, 255, 255}, // DEFAULT
-    {26, 2, 201, 255, 255},
-    {28, 3, 201, 255, 255}, // underglow
-    {31, 3, 248, 255, 255}, // underglow
-    // right side
-    {34, 6, 248, 255, 255},
-    {40, 6, 240, 255, 255},
-    {46, 6, 225, 255, 255},
-    {52, 6, 210, 255, 255},
-    {58, 4, 201, 255, 255},
-    {62, 3, 201, 255, 255}, // underglow
-    {65, 3, 248, 255, 255} // underglow
-);
-
-const rgblight_segment_t PROGMEM MOUSE_LIGHT_LAYER[] = RGBLIGHT_LAYER_SEGMENTS(
+    // Yellow
     // left side
     {0, 6, 4, 255, 255},
     {6, 6, 10, 255, 255},
     {12, 6, 25, 255, 255},
     {18, 6, 40, 255, 255},
-    {24, 2, 43, 255, 255},
-    {26, 1, 85, 255, 255}, // DEFAULT
-    {27, 1, 43, 255, 255},
-    {28, 3, 43, 255, 255}, // underglow
+    {24, 1, 40, 255, 255},
+    {25, 1, 85, 255, 255}, // DEFAULT
+    {26, 2, 40, 255, 255},
+    {28, 3, 40, 255, 255}, // underglow
     {31, 3, 4, 255, 255}, // underglow
     // right side
     {34, 6, 4, 255, 255},
@@ -153,35 +135,58 @@ const rgblight_segment_t PROGMEM MOUSE_LIGHT_LAYER[] = RGBLIGHT_LAYER_SEGMENTS(
     {46, 1, 0, 255, 255}, // _MEDIA_MISC
     {47, 5, 25, 255, 255},
     {52, 6, 40, 255, 255},
-    {58, 4, 43, 255, 255},
-    {62, 3, 43, 255, 255}, // underglow
+    {58, 4, 40, 255, 255},
+    {62, 3, 40, 255, 255}, // underglow
     {65, 3, 4, 255, 255} // underglow
 );
 
+const rgblight_segment_t PROGMEM MOUSE_LIGHT_LAYER[] = RGBLIGHT_LAYER_SEGMENTS(
+    // Red
+    // left side
+    {0, 6, 0, 205, 255},
+    {6, 6, 0, 225, 255},
+    {12, 6, 0, 240, 255},
+    {18, 6, 0, 250, 255},
+    {24, 2, 0, 255, 255},
+    {26, 1, 85, 255, 255}, // DEFAULT
+    {27, 1, 0, 255, 255},
+    {28, 3, 0, 205, 255}, // underglow
+    {31, 3, 0, 255, 255}, // underglow
+    // right side
+    {34, 6, 0, 205, 255},
+    {40, 6, 0, 225, 255},
+    {46, 6, 0, 240, 255},
+    {52, 6, 0, 250, 255},
+    {58, 4, 0, 255, 255},
+    {62, 3, 0, 205, 255}, // underglow
+    {65, 3, 0, 255, 255} // underglow
+);
+
 const rgblight_segment_t PROGMEM MEDIA_FN_LIGHT_LAYER[] = RGBLIGHT_LAYER_SEGMENTS(
+    // Magenta
     // both sides
     {0, 1, 0, 255, 255}, // RESET
-    {1, 4, 0, 0, 0},
+    {1, 4, 220, 255, 255},
     {5, 1, 85, 0, 255}, // set QWERTY as default
-    {6, 22, 0, 0, 0},
-    {28, 6, 0, 255, 255}, // underglow
+    {6, 22, 220, 255, 255},
+    {28, 6, 220, 255, 255}, // underglow
     {34, 1, 0, 255, 255}, // RESET
-    {35, 4, 0, 0, 0},
+    {35, 4, 220, 255, 255},
     {39, 1, 127, 255, 255}, // set COLEMAK as default
-    {40, 7, 0, 0, 0},
+    {40, 7, 220, 255, 255},
     {47, 1, 120, 255, 255}, // PLAY
     {48, 1, 0, 255, 255}, // NEXT
     {49, 1, 160, 255, 255}, // VOLUME_UP
     {50, 1, 43, 255, 255}, // BRIGHTNESS_UP
-    {51, 2, 0, 0, 0},
+    {51, 2, 220, 255, 255},
     {53, 1, 43, 200, 200}, // BRIGHTNESS_DOWN
     {54, 1, 160, 220, 200}, // VOLUME_DOWN
     {55, 1, 0, 220, 200}, // PREV
     {56, 1, 120, 220, 200}, // MUTE
-    {57, 1, 0, 0, 0},
+    {57, 1, 220, 255, 255},
     {58, 1, 85, 255, 255}, // DEFAULT
-    {59, 3, 0, 0, 0},
-    {62, 6, 0, 255, 255} // underglow
+    {59, 3, 220, 255, 255},
+    {62, 6, 220, 255, 255} // underglow
 );
 
 const rgblight_segment_t* const PROGMEM MY_LIGHT_LAYERS[] = RGBLIGHT_LAYERS_LIST(
