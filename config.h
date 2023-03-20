@@ -27,8 +27,8 @@
 #undef RGBLIGHT_EFFECT_ALTERNATING
 #undef RGBLIGHT_EFFECT_TWINKLE
 
-// #define TAPPING_TOGGLE 1 // tap just once for TT() to toggle the layer
-#define TAPPING_TERM 200
+#define TAPPING_TERM 180
+#define TAPPING_TERM_PER_KEY
 #define IGNORE_MOD_TAP_INTERRUPT
 
 #define MOUSEKEY_DELAY 20

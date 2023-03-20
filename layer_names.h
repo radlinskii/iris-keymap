@@ -4,11 +4,11 @@
 #pragma once
 
 enum my_layers {
-    _COLEMAK,
-    _QWERTY,
-    _SYM,
-    _NUM,
-    _NAV,
-    _MOUSE,
-    _MEDIA_FN,
+  _COLEMAK,
+  _QWERTY,
+  _SYM,
+  _NAV,
+  _NUM,
+  _MOUSE,
+  _MEDIA_FN,
 };

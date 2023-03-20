@@ -3,6 +3,8 @@
 
 #pragma once
 
+// clang-format off
+
 /*
 
 LED index mapping:
@@ -95,28 +97,6 @@ const rgblight_segment_t PROGMEM SYM_LIGHT_LAYER[] = RGBLIGHT_LAYER_SEGMENTS(
     {65, 3, 201, 255, 255} // underglow
 );
 
-const rgblight_segment_t PROGMEM NUM_LIGHT_LAYER[] = RGBLIGHT_LAYER_SEGMENTS(
-    // Light Blue
-    // left side
-    {0, 6, 180, 255, 255},
-    {6, 6, 170, 255, 255},
-    {12, 6, 160, 255, 255},
-    {18, 6, 150, 255, 255},
-    {24, 4, 140, 255, 255},
-    {28, 3, 140, 255, 255}, // underglow
-    {31, 3, 180, 255, 255}, // underglow
-    // right side
-    {34, 6, 180, 255, 255},
-    {40, 6, 170, 255, 255},
-    {46, 6, 160, 255, 255},
-    {52, 6, 150, 255, 255},
-    {58, 2, 140, 255, 255},
-    {60, 1, 85, 255, 255}, // DEFAULT
-    {61, 1, 140, 255, 255},
-    {62, 3, 140, 255, 255}, // underglow
-    {65, 3, 180, 255, 255} // underglow
-);
-
 const rgblight_segment_t PROGMEM NAV_LIGHT_LAYER[] = RGBLIGHT_LAYER_SEGMENTS(
     // Yellow
     // left side
@@ -138,6 +118,28 @@ const rgblight_segment_t PROGMEM NAV_LIGHT_LAYER[] = RGBLIGHT_LAYER_SEGMENTS(
     {58, 4, 40, 255, 255},
     {62, 3, 40, 255, 255}, // underglow
     {65, 3, 4, 255, 255} // underglow
+);
+
+const rgblight_segment_t PROGMEM NUM_LIGHT_LAYER[] = RGBLIGHT_LAYER_SEGMENTS(
+    // Light Blue
+    // left side
+    {0, 6, 180, 255, 255},
+    {6, 6, 170, 255, 255},
+    {12, 6, 160, 255, 255},
+    {18, 6, 150, 255, 255},
+    {24, 4, 140, 255, 255},
+    {28, 3, 140, 255, 255}, // underglow
+    {31, 3, 180, 255, 255}, // underglow
+    // right side
+    {34, 6, 180, 255, 255},
+    {40, 6, 170, 255, 255},
+    {46, 6, 160, 255, 255},
+    {52, 6, 150, 255, 255},
+    {58, 2, 140, 255, 255},
+    {60, 1, 85, 255, 255}, // DEFAULT
+    {61, 1, 140, 255, 255},
+    {62, 3, 140, 255, 255}, // underglow
+    {65, 3, 180, 255, 255} // underglow
 );
 
 const rgblight_segment_t PROGMEM MOUSE_LIGHT_LAYER[] = RGBLIGHT_LAYER_SEGMENTS(
@@ -193,8 +195,8 @@ const rgblight_segment_t* const PROGMEM MY_LIGHT_LAYERS[] = RGBLIGHT_LAYERS_LIST
     COLEMAK_LIGHT_LAYER,
     QWERTY_LIGHT_LAYER,
     SYM_LIGHT_LAYER,
-    NUM_LIGHT_LAYER,
     NAV_LIGHT_LAYER,
+    NUM_LIGHT_LAYER,
     MOUSE_LIGHT_LAYER,
     MEDIA_FN_LIGHT_LAYER
 );
