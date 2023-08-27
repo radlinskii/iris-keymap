@@ -1,10 +1,7 @@
 // Copyright 2022 Ignacy Radliński (@radlinskii)
 // SPDX-License-Identifier: GPL-2.0-or-later
 
-enum custom_keycodes {
-    K_COLEMAK = SAFE_RANGE,
-    K_QWERTY
-};
+enum custom_keycodes { K_COLEMAK = SAFE_RANGE, K_QWERTY };
 
 // COLEMAK
 #define LALT_KA LALT_T(KC_A)
@@ -45,12 +42,20 @@ enum custom_keycodes {
 // MISC
 #define KC_CAPW LGUI(LSFT(KC_3)) // capture the whole screen on MacOS
 #define KC_CAPP LGUI(LSFT(KC_5)) // capture portion of the screen on MacOS
-#define GUI_DWN LGUI(KC_DOWN) // jump to the bottom of the document
-#define GUI_UP LGUI(KC_UP) // jump to the top of the document
+#define GUI_DWN LGUI(KC_DOWN)    // jump to the bottom of the document
+#define GUI_UP LGUI(KC_UP)       // jump to the top of the document
 
 // LAYERS
 #define MO_SYM MO(_SYM)
 #define MO_NAV MO(_NAV)
 #define MS_ENT LT(_MOUSE, KC_ENT)
-#define NUM_SPC LT(_NUM, KC_SPC)
-#define MF_TAB LT(_MEDIA_FN, KC_TAB)
+#define NUM_TAB LT(_NUM, KC_TAB)
+
+// Tap Dance Declarations
+enum { Q_ES = 0 };
+
+// Tap Dance Definitions
+tap_dance_action_t tap_dance_actions[] = {
+    // Tap once for Q, twice Escape
+    [Q_ES] = ACTION_TAP_DANCE_DOUBLE(KC_Q, KC_ESC),
+};
